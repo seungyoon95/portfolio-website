@@ -7,3 +7,118 @@
     background-position: center;
     padding-top: 80px;
 }
+
+.contactTitle {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 5vw;
+}
+
+.contactDiv {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+}
+
+.contactLeft {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid white;
+    width: 20%;
+    text-align: center;
+}
+
+.contactRight {
+    width: 80%;
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+label {
+    color: black;
+}
+
+.form-floating {
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+#message {
+    height: 200px;
+}
+
+.button_update {
+    background: gray;
+    color: white;
+    border: 3px;
+    border-color: gray;
+    border-radius: 5px;
+    padding: 15px;
+    display: block;
+    width: 200px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.contactLeft i {
+    cursor: pointer;
+    margin-bottom: 5vh;
+}
+
+.form-floating {
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .contactDiv {
+        display: block;
+    }
+    .contactLeft {
+        width: 100%;
+        border-right: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contactLeftTitle {
+        text-align: center;
+        flex: 0 0 100%;
+    }
+
+    i {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contactRight {
+        width: 100%;
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .form-floating {
+        margin-bottom: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+}

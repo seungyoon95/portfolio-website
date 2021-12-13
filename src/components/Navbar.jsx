@@ -32,7 +32,7 @@ const Navbar = () => {
     return (
     <nav>
         <div className="logo">
-            <i className="fas fa-laptop-code"></i>
+            <i className="fas fa-laptop-code"><NavLink to="/"></NavLink></i>
             {/* <h4>Seungyoon Lee</h4> */}
         </div>
         <ul className={renderNavbar()}>

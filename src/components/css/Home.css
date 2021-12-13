@@ -20,6 +20,7 @@
 .showcase h1 {
     font-size: 64px;
     color: white;
+    text-align: center;
     font-weight: normal;
     letter-spacing: 3px;
 }
@@ -27,6 +28,7 @@
 .showcase h2 {
     font-size: 28px;
     color: white;
+    text-align: center;
     font-weight: lighter;
     letter-spacing: 4px;
 }
@@ -55,6 +57,14 @@
     padding: 10px 50px;
     margin: 0 20px;
     cursor: pointer;
+}
+
+.link-projects {
+    color: white;
+}
+
+.link-about {
+    color: black;
 }
 
 .showcase_btn-projects:hover, .showcase_btn-about:hover {

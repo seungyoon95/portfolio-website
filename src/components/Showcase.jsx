@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Showcase = () => {
     return (
@@ -11,8 +12,8 @@ const Showcase = () => {
                 nostrum esse quidem magnam eveniet animi consectetur!</p>
         
             <div className="showcase_buttons">
-                <button className="showcase_btn-projects">Projects</button>
-                <button className="showcase_btn-about">About</button>
+                <button className="showcase_btn-projects"><NavLink to="/projects" className='link-projects'>Projects</NavLink></button>
+                <button className="showcase_btn-about"><NavLink to="/about" className='link-about'>About</NavLink></button>
             </div>
         </div>
     )
