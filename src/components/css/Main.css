@@ -79,9 +79,14 @@ nav {
 }
 
 @media screen and (max-width: 900px) {
-    body {
+    html, body {
         overflow-x: hidden;
     }
+
+    body {
+        position: relative;
+    }
+
     .hamburger-toggle {
         display: block;
     }
@@ -97,11 +102,16 @@ nav {
         background-color: black;
         font-size: 32px;
         transform: translateX(100%);
+        visibility: hidden;
     }
 
     .active {
+        visibility: visible;
         transform: translateX(0%);
-        transition: transform 0.3s ease-in;
+        transition: transform 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
     }
 }
 
