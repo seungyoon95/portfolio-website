@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.loader {
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    min-height: 8vh;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.logo h4 {
+    margin-left: 10px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+
+.navlinks {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 20px;
+}
+
+.link {
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+
+.link a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.link a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.hamburger-toggle {
+    cursor: pointer;
+    color: white;
+    display: none;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
+    .hamburger-toggle {
+        display: block;
+    }
+    .navlinks {
+        position: absolute;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 92vh;
+        align-items: center;
+        top: 8vh;
+        background-color: black;
+        font-size: 32px;
+        transform: translateX(100%);
+    }
+
+    .active {
+        transform: translateX(0%);
+        transition: transform 0.3s ease-in;
+    }
+}
+
+.main {
+    /* background: url("./images/background/background-code.png"); */
+    background-color: black;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.showcase {
+    max-width: 800px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.showcase h1 {
+    font-size: 64px;
+    color: white;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.showcase h2 {
+    font-size: 28px;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 4px;
+}
+
+.showcase p {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.showcase_btn-projects {
+    border: white solid 1px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 50px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.showcase_btn-about {
+    border: white solid 1px;
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    padding: 10px 50px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.showcase_btn-projects:hover, .showcase_btn-about:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
