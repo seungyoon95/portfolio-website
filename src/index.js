@@ -1,56 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import Particle from './components/Particles';
-import ClockLoader from 'react-spinners/ClockLoader';
-import { useSpring, animated } from 'react-spring';
-import Navbar from './components/Navbar';
-import { css } from "@emotion/react";
-import './App.css';
-import Showcase from './components/Showcase';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Home, About, Projects, Contact } from './pages';
 
 const App = () => {
-    const [loading, setLoading] = useState(false);
-    const props = useSpring({ config: {duration:3000}, from: { opacity: 0 }, opacity: 1, delay: 100 });
-
-    const override = css`
-    display: block;
-    margin: 0 auto;
-    border-color: red;
-    `;
-
-    useEffect(() => {
-        setLoading(true);
-        setTimeout(() => {
-            setLoading(false);
-        }, 1500);
-    }, []);
-
     return (
-        <>
-            {
-            loading ?
-            <div className="loader"> 
-            <ClockLoader
-            css={override}
-            size={300}
-            color={"white"}
-            loading={loading}
-            />
-            </div>
-            : 
-
-            <animated.div className="App" style={props}>
-            <Particle />
-            <Navbar />
-            <div className="main">
-                <Showcase />
-            </div>
-
-            </animated.div>
-            }
-        </>
+        <Router>
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/projects' element={<Projects />} />
+                <Route path='/contact' element={<Contact />} />
+            </Routes>
+        </Router>
     )
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
+
+

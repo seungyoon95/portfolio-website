@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     
@@ -35,10 +36,10 @@ const Navbar = () => {
             {/* <h4>Seungyoon Lee</h4> */}
         </div>
         <ul className={renderNavbar()}>
-            <li className="link"><a href="#">Home</a></li>
-            <li className="link"><a href="#">About</a></li>
-            <li className="link"><a href="#">Projects</a></li>
-            <li className="link"><a href="#">Contact</a></li>
+                <li className="link"><NavLink to="/">Home</NavLink></li>
+                <li className="link"><NavLink to="/about">About</NavLink></li>
+                <li className="link"><NavLink to="/projects">Projects</NavLink></li>
+                <li className="link"><NavLink to="/contact">Contact</NavLink></li>
         </ul>
 
         <div onClick={handleNavLinkToggle} className="hamburger-toggle">

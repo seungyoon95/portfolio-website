@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -65,7 +65,7 @@ nav {
 }
 
 .link a {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .link a:hover {
@@ -104,67 +104,4 @@ nav {
         transform: translateX(0%);
         transition: transform 0.3s ease-in;
     }
-}
-
-.main {
-    /* background: url("./images/background/background-code.png"); */
-    background-color: black;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.showcase {
-    max-width: 800px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.showcase h1 {
-    font-size: 64px;
-    color: white;
-    font-weight: normal;
-    letter-spacing: 3px;
-}
-
-.showcase h2 {
-    font-size: 28px;
-    color: white;
-    font-weight: lighter;
-    letter-spacing: 4px;
-}
-
-.showcase p {
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-
-.showcase_btn-projects {
-    border: white solid 1px;
-    background-color: transparent;
-    color: white;
-    padding: 10px 50px;
-    margin: 0 20px;
-    cursor: pointer;
-}
-
-.showcase_btn-about {
-    border: white solid 1px;
-    background-color: rgba(255, 255, 255, 1);
-    color: black;
-    padding: 10px 50px;
-    margin: 0 20px;
-    cursor: pointer;
-}
-
-.showcase_btn-projects:hover, .showcase_btn-about:hover {
-    background-color: rgba(255, 255, 255, 0.6);
 }

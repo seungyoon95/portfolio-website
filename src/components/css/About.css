@@ -1,0 +1,9 @@
+.mainAbout {
+    /* background: url("../../images/background/background-code.png"); */
+    background-color: black;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+}
