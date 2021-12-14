@@ -39,10 +39,10 @@ const Contact = () => {
                         <a href='https://www.linkedin.com/in/seungyoon95/'><i class="fab fa-linkedin fa-4x"></i></a>
                         <a href='https://github.com/seungyoon95'><i class="fab fa-github-square fa-4x"></i></a>
                     </div>
-                    <div className='contactRight'>
+                    {/* <div className='contactRight'>
                         <p className='contactRightTitle'>Email</p>
 
-                        {/* <form>
+                        <form>
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="name" placeholder="Your Name" />
                                 <label for="Name">Name</label>
@@ -61,9 +61,9 @@ const Contact = () => {
                             <button className="button_update">Submit</button>
 
                             <p class="card-text" id="updateText"><small class="text-muted"></small></p>
-                        </form> */}
+                        </form>
 
-                    </div>
+                    </div> */}
                 </div>
             </animated.div>
         </>

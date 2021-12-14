@@ -5,6 +5,7 @@ import { useSpring, animated } from 'react-spring';
 import Navbar from '../components/Navbar';
 import { css } from "@emotion/react";
 import Showcase from '../components/Showcase';
+import Footer from '../components/Footer';
 import '../components/css/Main.css';
 import '../components/css/Home.css';
 
@@ -44,9 +45,11 @@ const Home = () => {
             <Navbar />
             <div className="mainHome"> 
                 <Showcase />
+                {/* <Footer /> */}
             </div>
 
             </animated.div>
+
             }
         </>
     );
