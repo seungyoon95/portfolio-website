@@ -103,15 +103,17 @@ nav {
         font-size: 32px;
         transform: translateX(100%);
         visibility: hidden;
+        z-index: 9999;
     }
 
     .active {
         visibility: visible;
         transform: translateX(0%);
         transition: transform 0.5s ease-in-out;
-        display: flex;
+        display: relative;
         flex-direction: column;
         max-width: 100%;
+        z-index: 9999;
     }
 }
 
