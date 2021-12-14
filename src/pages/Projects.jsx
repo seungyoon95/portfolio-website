@@ -99,7 +99,10 @@ const Projects = () => {
                         <div className="div_project">
                             <div className="project_description">
                                 <h2 className="project_title">Evanescent</h2>
-                                <h3 className="project_year">2021 - 2021</h3>
+                                <div className="project_year">
+                                    <h3>Sept 2021</h3>
+                                    <h3>~ Dec 2021</h3>
+                                </div>
                             </div>
 
                             <Carousel variant="dark" className="carousel_project">
@@ -179,7 +182,10 @@ const Projects = () => {
                         <div className="div_project">
                             <div className="project_description">
                                 <h2 className="project_title">API Quiz Creator</h2>
-                                <h3 className="project_year">2021 - 2021</h3>
+                                <div className="project_year">
+                                    <h3>Oct 2021</h3>
+                                    <h3>~ Nov 2021</h3>
+                                </div>
                             </div>
 
 
@@ -241,7 +247,10 @@ const Projects = () => {
                         <div className="div_project">
                             <div className="project_description">
                                 <h2 className="project_title">Electric Advantage</h2>
-                                <h3 className="project_year">2021 - 2021</h3>
+                                <div className="project_year">
+                                    <h3>May 2021</h3>
+                                    <h3>~ June 2021</h3>
+                                </div>
                             </div>
 
 
@@ -282,7 +291,10 @@ const Projects = () => {
                         <div className="div_project">
                             <div className="project_description">
                                 <h2 className="project_title">Budgeting App</h2>
-                                <h3 className="project_year">2021 - 2021</h3>
+                                <div className="project_year">
+                                    <h3>Feb 2021</h3>
+                                    <h3>~ Apr 2021</h3>
+                                </div>
                             </div>
                             <Carousel className="carousel_project">
                                 <Carousel.Item interval={1500}>
@@ -327,7 +339,10 @@ const Projects = () => {
                         <div className="div_project">
                             <div className="project_description">
                                 <h2 className="project_title">A_Game</h2>
-                                <h3 className="project_year">2020 - 2020</h3>
+                                <div className="project_year">
+                                    <h3>May 2020</h3>
+                                    <h3>~ June 2020</h3>    
+                                </div>
                             </div>
                             
                             <Carousel variant="dark" className="carousel_project">
@@ -430,7 +445,10 @@ const Projects = () => {
                         <div className="div_project">
                             <div className="project_description">
                                 <h2 className="project_title">Marked</h2>
-                                <h3 className="project_year">2020 - 2020</h3>
+                                <div className="project_year">
+                                    <h3>Jan 2020</h3>
+                                    <h3>~ Apr 2020</h3>    
+                                </div>
                             </div>
 
                             <Carousel className="carousel_project">
@@ -498,7 +516,10 @@ const Projects = () => {
                         <div className="div_project">
                             <div className="project_description">
                                 <h2 className="project_title">Hangman</h2>
-                                <h3 className="project_year">2020 - 2020</h3>
+                                <div className="project_year">
+                                    <h3>Mar 2020</h3>
+                                    <h3>~ Apr 2020</h3>
+                                </div>
                             </div>
 
                             <Carousel variant="dark" className="carousel_project">
@@ -538,7 +559,10 @@ const Projects = () => {
                         <div className="div_project">
                             <div className="project_description">
                                 <h2 className="project_title">Zombie Hunter</h2>
-                                <h3 className="project_year">2020 - 2020</h3>
+                                <div className="project_year">
+                                    <h3>Jan 2020</h3>
+                                    <h3>~ Feb 2020</h3>
+                                </div>
                             </div>
 
                             <Carousel variant="dark" className="carousel_project">
