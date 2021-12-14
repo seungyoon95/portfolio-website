@@ -45,6 +45,9 @@ import image_hangman_Begin from '../images/projects/Hangman/Hangman_Begin.png';
 import image_hangman_InProgress from '../images/projects/Hangman/Hangman_InProgress.png';
 import image_hangman_GameOver from '../images/projects/Hangman/Hangman_GameOver.png';
 
+// ZombieGame images
+import image_ZombieGame_Main from '../images/projects/ZombieGame/ZombieGame_Main.png';
+import image_ZombieGame_Explode from '../images/projects/ZombieGame/ZombieGame_Explode.png';
 
 const Projects = () => {
 
@@ -470,7 +473,7 @@ const Projects = () => {
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
-                                src="holder.js/800x400?text=First slide&bg=373940"
+                                src={image_ZombieGame_Main}
                                 alt="First slide"
                                 />
 
@@ -478,17 +481,10 @@ const Projects = () => {
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
-                                src="holder.js/800x400?text=Second slide&bg=282c34"
+                                src={image_ZombieGame_Explode}
                                 alt="Second slide"
                                 />
 
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src="holder.js/800x400?text=Third slide&bg=20232a"
-                                alt="Third slide"
-                                />
                             </Carousel.Item>
                         </Carousel>
 
