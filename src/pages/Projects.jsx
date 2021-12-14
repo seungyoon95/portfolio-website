@@ -19,6 +19,16 @@ import image_evanescent_Search from '../images/projects/Evanescent/Evanescent_Se
 import image_evanescent_ItemDetails from '../images/projects/Evanescent/Evanescent_ItemDetails.png';
 import image_evanescent_Portfolio from '../images/projects/Evanescent/Evanescent_Portfolio.png';
 
+// API Quiz Creator Images;
+import image_Quiz_Home from '../images/projects/API Quiz Creator/Quiz_Home.png';
+import image_Quiz_Create from '../images/projects/API Quiz Creator/Quiz_Create.png';
+import image_Quiz_Update from '../images/projects/API Quiz Creator/Quiz_Update.png';
+import image_Quiz_Delete from '../images/projects/API Quiz Creator/Quiz_Delete.png';
+import image_Quiz_Category from '../images/projects/API Quiz Creator/Quiz_Category.png';
+import image_Quiz_Random from '../images/projects/API Quiz Creator/Quiz_Random.png';
+
+// Electric Advantage images
+
 // Budgeting App images
 import image_budgeting_main from '../images/projects/Budgeting App/budgeting_main.PNG';
 import image_budgeting_home from '../images/projects/Budgeting App/budgeting_home.PNG';
@@ -39,6 +49,15 @@ import image_A_Game_InGame1 from '../images/projects/A_Game/A_Game_InGame1.png';
 import image_A_Game_InGame2 from '../images/projects/A_Game/A_Game_InGame2.png';
 import image_A_Game_InGame3 from '../images/projects/A_Game/A_Game_InGame3.png';
 import image_A_Game_GameOver from '../images/projects/A_Game/A_Game_GameOver.png';
+
+// Marked images
+import image_Marked_Landing from '../images/projects/Marked/Marked_Landing.png';
+import image_Marked_Home from '../images/projects/Marked/Marked_Home.png';
+import image_Marked_Nav from '../images/projects/Marked/Marked_Nav.png';
+import image_Marked_Semester from '../images/projects/Marked/Marked_Semester.png';
+import image_Marked_Grade from '../images/projects/Marked/Marked_Grade.png';
+import image_Marked_Insight from '../images/projects/Marked/Marked_Insight.png';
+import image_Marked_Settings from '../images/projects/Marked/Marked_Settings.png';
 
 // Hangman images
 import image_hangman_Begin from '../images/projects/Hangman/Hangman_Begin.png';
@@ -83,7 +102,7 @@ const Projects = () => {
                             <h3 className="project_year">2021 - 2021</h3>
                         </div>
 
-                        <Carousel className="carousel_project">
+                        <Carousel variant="dark" className="carousel_project">
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
@@ -109,42 +128,42 @@ const Projects = () => {
                                 <img
                                 className="d-block w-100"
                                 src={image_evanescent_SignUp}
-                                alt="Third slide"
+                                alt="Fourth slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
                                 src={image_evanescent_SignIn}
-                                alt="Third slide"
+                                alt="Fifth slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img
                                 className="d-block w-100"
                                 src={image_evanescent_Profile}
-                                alt="Third slide"
+                                alt="Sixth slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
                                 src={image_evanescent_Search}
-                                alt="Third slide"
+                                alt="Seventh slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
                                 src={image_evanescent_ItemDetails}
-                                alt="Third slide"
+                                alt="Eighth slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
                                 src={image_evanescent_Portfolio}
-                                alt="Third slide"
+                                alt="Ninth slide"
                                 />
                             </Carousel.Item>
                         </Carousel>
@@ -164,11 +183,11 @@ const Projects = () => {
                         </div>
 
 
-                        <Carousel className="carousel_project">
+                        <Carousel variant="dark" className="carousel_project">
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
-                                src="holder.js/800x400?text=First slide&bg=373940"
+                                src={image_Quiz_Home}
                                 alt="First slide"
                                 />
 
@@ -176,7 +195,7 @@ const Projects = () => {
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
-                                src="holder.js/800x400?text=Second slide&bg=282c34"
+                                src={image_Quiz_Create}
                                 alt="Second slide"
                                 />
 
@@ -184,8 +203,29 @@ const Projects = () => {
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
-                                src="holder.js/800x400?text=Third slide&bg=20232a"
+                                src={image_Quiz_Update}
                                 alt="Third slide"
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item interval={1500}>
+                                <img
+                                className="d-block w-100"
+                                src={image_Quiz_Delete}
+                                alt="Fourth slide"
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item interval={1500}>
+                                <img
+                                className="d-block w-100"
+                                src={image_Quiz_Category}
+                                alt="Fifth slide"
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item interval={1500}>
+                                <img
+                                className="d-block w-100"
+                                src={image_Quiz_Random}
+                                alt="Sixth slide"
                                 />
                             </Carousel.Item>
                         </Carousel>
@@ -288,7 +328,7 @@ const Projects = () => {
                             <h3 className="project_year">2020 - 2020</h3>
                         </div>
                         
-                        <Carousel className="carousel_project">
+                        <Carousel variant="dark" className="carousel_project">
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
@@ -316,63 +356,63 @@ const Projects = () => {
                                 <img
                                 className="d-block w-100"
                                 src={image_A_Game_About}
-                                alt="Third slide"
+                                alt="Fourth slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
                                 src={image_A_Game_EasterEgg}
-                                alt="Third slide"
+                                alt="Fifth slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
                                 src={image_A_Game_Leaderboard}
-                                alt="Third slide"
+                                alt="Sixth slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
                                 src={image_A_Game_Profile}
-                                alt="Third slide"
+                                alt="Seventh slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
                                 src={image_A_Game_Loading}
-                                alt="Third slide"
+                                alt="Eighth slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
                                 src={image_A_Game_InGame1}
-                                alt="Third slide"
+                                alt="Ninth slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
                                 src={image_A_Game_InGame2}
-                                alt="Third slide"
+                                alt="Tenth slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
                                 src={image_A_Game_InGame3}
-                                alt="Third slide"
+                                alt="Eleventh slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
                                 src={image_A_Game_GameOver}
-                                alt="Third slide"
+                                alt="Twelveth slide"
                                 />
                             </Carousel.Item>
                         </Carousel>
@@ -395,7 +435,7 @@ const Projects = () => {
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
-                                src="holder.js/800x400?text=First slide&bg=373940"
+                                src={image_Marked_Landing}
                                 alt="First slide"
                                 />
 
@@ -403,7 +443,7 @@ const Projects = () => {
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
-                                src="holder.js/800x400?text=Second slide&bg=282c34"
+                                src={image_Marked_Home}
                                 alt="Second slide"
                                 />
 
@@ -411,8 +451,36 @@ const Projects = () => {
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
-                                src="holder.js/800x400?text=Third slide&bg=20232a"
+                                src={image_Marked_Nav}
                                 alt="Third slide"
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item interval={1500}>
+                                <img
+                                className="d-block w-100"
+                                src={image_Marked_Semester}
+                                alt="Fourth slide"
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item interval={1500}>
+                                <img
+                                className="d-block w-100"
+                                src={image_Marked_Grade}
+                                alt="Fifth slide"
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item interval={1500}>
+                                <img
+                                className="d-block w-100"
+                                src={image_Marked_Insight}
+                                alt="Sixth slide"
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item interval={1500}>
+                                <img
+                                className="d-block w-100"
+                                src={image_Marked_Settings}
+                                alt="Seventh slide"
                                 />
                             </Carousel.Item>
                         </Carousel>
@@ -431,7 +499,7 @@ const Projects = () => {
                             <h3 className="project_year">2020 - 2020</h3>
                         </div>
 
-                        <Carousel className="carousel_project">
+                        <Carousel variant="dark" className="carousel_project">
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
@@ -469,7 +537,7 @@ const Projects = () => {
                             <h3 className="project_year">2020 - 2020</h3>
                         </div>
 
-                        <Carousel className="carousel_project">
+                        <Carousel variant="dark" className="carousel_project">
                             <Carousel.Item interval={1500}>
                                 <img
                                 className="d-block w-100"
