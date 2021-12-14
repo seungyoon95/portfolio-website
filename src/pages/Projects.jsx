@@ -92,474 +92,479 @@ const Projects = () => {
             {/* <Particle /> */}
             <Navbar />
             <animated.div className='mainProjects' style={props}>
+            <h2 className='projectTitle'>Projects Page</h2>
                 <div className='projectsDiv'>
-                    <h2>Projects Page</h2>
-                    <hr />
+                    <div className='projectsLeft'>
 
-                    <div className="div_project">
-                        <div className="project_description">
-                            <h2 className="project_title">Evanescent</h2>
-                            <h3 className="project_year">2021 - 2021</h3>
+                        <div className="div_project">
+                            <div className="project_description">
+                                <h2 className="project_title">Evanescent</h2>
+                                <h3 className="project_year">2021 - 2021</h3>
+                            </div>
+
+                            <Carousel variant="dark" className="carousel_project">
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_evanescent_Home}
+                                    alt="First slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_evanescent_Landing1}
+                                    alt="Second slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_evanescent_Landing2}
+                                    alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_evanescent_SignUp}
+                                    alt="Fourth slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_evanescent_SignIn}
+                                    alt="Fifth slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_evanescent_Profile}
+                                    alt="Sixth slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_evanescent_Search}
+                                    alt="Seventh slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_evanescent_ItemDetails}
+                                    alt="Eighth slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_evanescent_Portfolio}
+                                    alt="Ninth slide"
+                                    />
+                                </Carousel.Item>
+                            </Carousel>
+
+                            <div className="div_projectButton">
+                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                            </div>
+
                         </div>
 
-                        <Carousel variant="dark" className="carousel_project">
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_evanescent_Home}
-                                alt="First slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_evanescent_Landing1}
-                                alt="Second slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_evanescent_Landing2}
-                                alt="Third slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                className="d-block w-100"
-                                src={image_evanescent_SignUp}
-                                alt="Fourth slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_evanescent_SignIn}
-                                alt="Fifth slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                className="d-block w-100"
-                                src={image_evanescent_Profile}
-                                alt="Sixth slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_evanescent_Search}
-                                alt="Seventh slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_evanescent_ItemDetails}
-                                alt="Eighth slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_evanescent_Portfolio}
-                                alt="Ninth slide"
-                                />
-                            </Carousel.Item>
-                        </Carousel>
+                        <hr />
 
-                        <div className="div_projectButton">
-                            <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                        <div className="div_project">
+                            <div className="project_description">
+                                <h2 className="project_title">API Quiz Creator</h2>
+                                <h3 className="project_year">2021 - 2021</h3>
+                            </div>
+
+
+                            <Carousel variant="dark" className="carousel_project">
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_Quiz_Home}
+                                    alt="First slide"
+                                    />
+
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_Quiz_Create}
+                                    alt="Second slide"
+                                    />
+
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_Quiz_Update}
+                                    alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_Quiz_Delete}
+                                    alt="Fourth slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_Quiz_Category}
+                                    alt="Fifth slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_Quiz_Random}
+                                    alt="Sixth slide"
+                                    />
+                                </Carousel.Item>
+                            </Carousel>
+
+                            <div className="div_projectButton">
+                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                            </div>
+
                         </div>
 
-                    </div>
+                        <hr />
 
-                    <hr />
+                        <div className="div_project">
+                            <div className="project_description">
+                                <h2 className="project_title">Electric Advantage</h2>
+                                <h3 className="project_year">2021 - 2021</h3>
+                            </div>
 
-                    <div className="div_project">
-                        <div className="project_description">
-                            <h2 className="project_title">API Quiz Creator</h2>
-                            <h3 className="project_year">2021 - 2021</h3>
+
+                            <Carousel className="carousel_project">
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src="holder.js/800x400?text=First slide&bg=373940"
+                                    alt="First slide"
+                                    />
+
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src="holder.js/800x400?text=Second slide&bg=282c34"
+                                    alt="Second slide"
+                                    />
+
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src="holder.js/800x400?text=Third slide&bg=20232a"
+                                    alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                            </Carousel>
+
+                            <div className="div_projectButton">
+                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                            </div>
+
                         </div>
 
+                        <hr />
 
-                        <Carousel variant="dark" className="carousel_project">
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_Quiz_Home}
-                                alt="First slide"
-                                />
-
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_Quiz_Create}
-                                alt="Second slide"
-                                />
-
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_Quiz_Update}
-                                alt="Third slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_Quiz_Delete}
-                                alt="Fourth slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_Quiz_Category}
-                                alt="Fifth slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_Quiz_Random}
-                                alt="Sixth slide"
-                                />
-                            </Carousel.Item>
-                        </Carousel>
-
-                        <div className="div_projectButton">
-                            <Button className="button_project" variant="outline-light">More Info</Button>{' '}
-                        </div>
-
-                    </div>
-
-                    <hr />
-
-                    <div>
-                        <div className="project_description">
-                            <h2 className="project_title">Electric Advantage</h2>
-                            <h3 className="project_year">2021 - 2021</h3>
-                        </div>
-
-
-                        <Carousel className="carousel_project">
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src="holder.js/800x400?text=First slide&bg=373940"
-                                alt="First slide"
-                                />
-
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src="holder.js/800x400?text=Second slide&bg=282c34"
-                                alt="Second slide"
-                                />
-
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src="holder.js/800x400?text=Third slide&bg=20232a"
-                                alt="Third slide"
-                                />
-                            </Carousel.Item>
-                        </Carousel>
-
-                        <div className="div_projectButton">
-                            <Button className="button_project" variant="outline-light">More Info</Button>{' '}
-                        </div>
-
-                    </div>
-
-                    <hr />
-
-                    <div className="div_project">
-                        <div className="project_description">
-                            <h2 className="project_title">Budgeting App for Android</h2>
-                            <h3 className="project_year">2021 - 2021</h3>
-                        </div>
-                        <Carousel className="carousel_project">
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_budgeting_home}
-                                alt="First slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_budgeting_edit}
-                                alt="Second slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_budgeting_daily}
-                                alt="Third slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_budgeting_monthly}
-                                alt="Fourth slide"
-                                />
-                            </Carousel.Item>
-                        </Carousel>
-                        
-                        <div className="div_projectButton">
-                            <Button className="button_project" variant="outline-light">More Info</Button>{' '}
-                        </div>
-                    </div>
-
-                    <hr />
-
-                    <div>
-                        <div className="project_description">
-                            <h2 className="project_title">A_Game</h2>
-                            <h3 className="project_year">2020 - 2020</h3>
-                        </div>
-                        
-                        <Carousel variant="dark" className="carousel_project">
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_A_Game_SignIn}
-                                alt="First slide"
-                                />
-
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_A_Game_SignUp}
-                                alt="Second slide"
-                                />
-
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_A_Game_Landing}
-                                alt="Third slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_A_Game_About}
-                                alt="Fourth slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_A_Game_EasterEgg}
-                                alt="Fifth slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_A_Game_Leaderboard}
-                                alt="Sixth slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_A_Game_Profile}
-                                alt="Seventh slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_A_Game_Loading}
-                                alt="Eighth slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_A_Game_InGame1}
-                                alt="Ninth slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_A_Game_InGame2}
-                                alt="Tenth slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_A_Game_InGame3}
-                                alt="Eleventh slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_A_Game_GameOver}
-                                alt="Twelveth slide"
-                                />
-                            </Carousel.Item>
-                        </Carousel>
-
-                        <div className="div_projectButton">
-                            <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                        <div className="div_project">
+                            <div className="project_description">
+                                <h2 className="project_title">Budgeting App</h2>
+                                <h3 className="project_year">2021 - 2021</h3>
+                            </div>
+                            <Carousel className="carousel_project">
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_budgeting_home}
+                                    alt="First slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_budgeting_edit}
+                                    alt="Second slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_budgeting_daily}
+                                    alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_budgeting_monthly}
+                                    alt="Fourth slide"
+                                    />
+                                </Carousel.Item>
+                            </Carousel>
+                            
+                            <div className="div_projectButton">
+                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                            </div>
                         </div>
 
                     </div>
 
-                    <hr />
+                    <div className='projectsRight'>
 
-                    <div>
-                        <div className="project_description">
-                            <h2 className="project_title">Marked</h2>
-                            <h3 className="project_year">2020 - 2020</h3>
+                        <div className="div_project">
+                            <div className="project_description">
+                                <h2 className="project_title">A_Game</h2>
+                                <h3 className="project_year">2020 - 2020</h3>
+                            </div>
+                            
+                            <Carousel variant="dark" className="carousel_project">
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_A_Game_SignIn}
+                                    alt="First slide"
+                                    />
+
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_A_Game_SignUp}
+                                    alt="Second slide"
+                                    />
+
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_A_Game_Landing}
+                                    alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_A_Game_About}
+                                    alt="Fourth slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_A_Game_EasterEgg}
+                                    alt="Fifth slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_A_Game_Leaderboard}
+                                    alt="Sixth slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_A_Game_Profile}
+                                    alt="Seventh slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_A_Game_Loading}
+                                    alt="Eighth slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_A_Game_InGame1}
+                                    alt="Ninth slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_A_Game_InGame2}
+                                    alt="Tenth slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_A_Game_InGame3}
+                                    alt="Eleventh slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_A_Game_GameOver}
+                                    alt="Twelveth slide"
+                                    />
+                                </Carousel.Item>
+                            </Carousel>
+
+                            <div className="div_projectButton">
+                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                            </div>
+
                         </div>
 
-                        <Carousel className="carousel_project">
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_Marked_Landing}
-                                alt="First slide"
-                                />
+                        <hr />
 
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_Marked_Home}
-                                alt="Second slide"
-                                />
+                        <div className="div_project">
+                            <div className="project_description">
+                                <h2 className="project_title">Marked</h2>
+                                <h3 className="project_year">2020 - 2020</h3>
+                            </div>
 
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_Marked_Nav}
-                                alt="Third slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_Marked_Semester}
-                                alt="Fourth slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_Marked_Grade}
-                                alt="Fifth slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_Marked_Insight}
-                                alt="Sixth slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_Marked_Settings}
-                                alt="Seventh slide"
-                                />
-                            </Carousel.Item>
-                        </Carousel>
+                            <Carousel className="carousel_project">
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_Marked_Landing}
+                                    alt="First slide"
+                                    />
 
-                        <div className="div_projectButton">
-                            <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_Marked_Home}
+                                    alt="Second slide"
+                                    />
+
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_Marked_Nav}
+                                    alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_Marked_Semester}
+                                    alt="Fourth slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_Marked_Grade}
+                                    alt="Fifth slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_Marked_Insight}
+                                    alt="Sixth slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_Marked_Settings}
+                                    alt="Seventh slide"
+                                    />
+                                </Carousel.Item>
+                            </Carousel>
+
+                            <div className="div_projectButton">
+                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                            </div>
+
                         </div>
 
-                    </div>
+                        <hr />
 
-                    <hr />
+                        <div className="div_project">
+                            <div className="project_description">
+                                <h2 className="project_title">Hangman</h2>
+                                <h3 className="project_year">2020 - 2020</h3>
+                            </div>
 
-                    <div>
-                        <div className="project_description">
-                            <h2 className="project_title">Hangman</h2>
-                            <h3 className="project_year">2020 - 2020</h3>
+                            <Carousel variant="dark" className="carousel_project">
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_hangman_Begin}
+                                    alt="First slide"
+                                    />
+
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_hangman_InProgress}
+                                    alt="Second slide"
+                                    />
+
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_hangman_GameOver}
+                                    alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                            </Carousel>
+
+                            <div className="div_projectButton">
+                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                            </div>
+
                         </div>
 
-                        <Carousel variant="dark" className="carousel_project">
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_hangman_Begin}
-                                alt="First slide"
-                                />
+                        <hr />
 
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_hangman_InProgress}
-                                alt="Second slide"
-                                />
+                        <div className="div_project">
+                            <div className="project_description">
+                                <h2 className="project_title">Zombie Hunter</h2>
+                                <h3 className="project_year">2020 - 2020</h3>
+                            </div>
 
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_hangman_GameOver}
-                                alt="Third slide"
-                                />
-                            </Carousel.Item>
-                        </Carousel>
+                            <Carousel variant="dark" className="carousel_project">
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_ZombieGame_Main}
+                                    alt="First slide"
+                                    />
 
-                        <div className="div_projectButton">
-                            <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                                </Carousel.Item>
+                                <Carousel.Item interval={1500}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={image_ZombieGame_Explode}
+                                    alt="Second slide"
+                                    />
+
+                                </Carousel.Item>
+                            </Carousel>
+
+                            <div className="div_projectButton">
+                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                            </div>
+
                         </div>
-
-                    </div>
-
-                    <div>
-                        <div className="project_description">
-                            <h2 className="project_title">Zombie Hunter</h2>
-                            <h3 className="project_year">2020 - 2020</h3>
-                        </div>
-
-                        <Carousel variant="dark" className="carousel_project">
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_ZombieGame_Main}
-                                alt="First slide"
-                                />
-
-                            </Carousel.Item>
-                            <Carousel.Item interval={1500}>
-                                <img
-                                className="d-block w-100"
-                                src={image_ZombieGame_Explode}
-                                alt="Second slide"
-                                />
-
-                            </Carousel.Item>
-                        </Carousel>
-
-                        <div className="div_projectButton">
-                            <Button className="button_project" variant="outline-light">More Info</Button>{' '}
-                        </div>
-
                     </div>
 
                 </div>

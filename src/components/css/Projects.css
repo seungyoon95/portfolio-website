@@ -12,8 +12,33 @@ body {
     padding-top: 80px;
 }
 
+.projectTitle {
+    margin-top: 5vh;
+}
+
 .projectsDiv {
-    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+}
+
+.div_project {
+    margin-bottom: 3vh;
+}
+
+.projectsLeft {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid white;
+    width: 50%;
+    text-align: center;
+}
+
+.projectsRight {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
 }
 
 .project_description {
@@ -27,24 +52,24 @@ body {
 .project_title {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     text-align: left;
     font-weight: normal;
 }
 
 .project_year {
-    width: 50%;
+    width: 30%;
     text-align: right;
 }
 
 img {
-    height: 800px;
+    height: 400px;
 }
 
 .carousel_project {
     margin-top: 3vh;
-    width: 80vw;
-    max-width: 1000px;
+    width: 45vw;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
@@ -62,4 +87,26 @@ img {
     margin-bottom: 3vh;
     width: 100px;
     z-index: 1;
+}
+
+@media screen and (max-width: 900px) {
+    .projectsDiv {
+        display: block;
+    }
+    .projectsLeft {
+        width: 100%;
+        border-right: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+    }
+
+    .projectsRight {
+        width: 100%;
+        text-align: center;
+    }
 }
