@@ -116,10 +116,12 @@ nav {
         visibility: hidden;
         z-index: 9999;
         overflow: hidden;
+        display: none;
     }
     
     .active {
         visibility: visible;
+        display: flex;
         animation: 0.3s ease-out 0s 1 slideInFromTop;
         display: fixed;
         flex-direction: column;

@@ -42,7 +42,7 @@
 }
 
 .profileLeft {
-    width: 30%;
+    width: 40%;
 }
 
 .avatar {
@@ -51,7 +51,7 @@
 }
 
 .profileRight {
-    width: 70%;
+    width: 60%;
 }
 
 .profileName {
@@ -88,6 +88,12 @@ h3 {
 }
 
 @media screen and (max-width: 900px) {
+    .profileCard {
+        display: flex;
+        flex-direction: column;
+
+    }
+
     .profileLeft {
         width: 100%;
         border-right: none;

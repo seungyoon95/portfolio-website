@@ -88,3 +88,16 @@
     background-color: black;
     color: white;
 }
+
+@media screen and (max-width: 900px) {
+    .showcase_buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .showcase_btn-projects {
+        margin-bottom: 20px;
+    }
+}

@@ -41,7 +41,7 @@ const Navbar = () => {
             {/* <h4>Seungyoon Lee</h4> */}
         </div>
         <ul className={renderNavbar()}>
-                {/* <li className="link"><NavLink to="/">Home</NavLink></li> */}
+                <li className="link"><NavLink to="/">Home</NavLink></li>
                 <li className="link"><NavLink to="/about">About</NavLink></li>
                 <li className="link"><NavLink to="/projects">Projects</NavLink></li>
                 <li className="link"><NavLink to="/contact">Contact</NavLink></li>

@@ -27,19 +27,17 @@ const About = () => {
 
     return (
         <>
-            {/* <Particle /> */}
             <Navbar />
             <animated.div className='mainAbout' style={props}>
                 <div className='aboutDiv'>
-                    {/* <div class="backgroundImg"></div>  */}
                     <div className="profileCard">
                             <div className='profileLeft'>
                                 <img src={Avatar} className="avatar" />
                             </div>
                             <div className='profileRight'>
                                 <h2 className="profileName">Seungyoon (Jack) Lee</h2>
-                                <h3>I'm a full-stack / software developer from Vancouver, BC.</h3>
-                                <h3>As a recent graduate of BCIT CST, </h3>
+                                <h3> &nbsp;I'm a full-stack / software developer from Vancouver, recently graduated
+                                    from Computer Systems Technology @ BCIT in December 2021.</h3>
                             </div>
                             
                     </div>
