@@ -1,15 +1,23 @@
-.aboutDiv {
-    /* background: url("../../images/background/background-code.png"); */
-    background-color: white;
-    height: 87vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 80px;
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
-hr {
-    width: 90%;
+.aboutDiv {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    background-color: white;
+    height: 84vh;
+}
+
+.aboutTitle {
+    margin-top: 3vh;
+}
+
+.profileCard {
     margin-left: auto;
     margin-right: auto;
 }

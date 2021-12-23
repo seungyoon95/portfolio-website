@@ -1,11 +1,10 @@
 .mainContact {
-    /* background: url("./images/background/background-code.png"); */
+    
     background-color: white;
-    height: 87vh;
+    height: 84vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 80px;
 }
 
 .contactTitle {
@@ -23,7 +22,26 @@
     flex-direction: row;
 }
 
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .contactLeft {
+    animation: 0.5s ease-out 0s 1 slideInFromLeft;
     display: flex;
     flex-direction: column;
     border-right: 1px solid grey;
@@ -32,6 +50,7 @@
 }
 
 .contactRight {
+    animation: 1s ease-out 0s 1 slideInFromRight;
     width: 80%;
     text-align: center;
 }

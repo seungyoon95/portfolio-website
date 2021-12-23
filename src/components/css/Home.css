@@ -2,7 +2,6 @@
     background-image: linear-gradient(lightgray, white, lightgray);
     animation: 1s ease-out 0s 1 slideInFromLeft;
     background-color: white;
-    height: 87vh;
 }
 
 @keyframes slideInFromLeft {

@@ -736,8 +736,9 @@ const Projects = () => {
                     </div>
 
                 </div>
-                <Footer />
+                
             </animated.div>
+            <Footer />
 
         </>
     );

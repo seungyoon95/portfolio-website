@@ -42,7 +42,6 @@ const Home = () => {
             : 
 
             <animated.div className="App" style={props}>
-                {/* <Particle /> */}
                 <Navbar />
                 <div className="mainHome"> 
                     <Showcase className="showcase" />
