@@ -31,12 +31,13 @@ const About = () => {
             <Navbar />
             <animated.div className='mainAbout' style={props}>
                 <div className='aboutDiv'>
-                    <h2 className='aboutTitle'>***Profile Card***</h2>
+                    <h2 className='aboutTitle'>About</h2>
 
                     <Card style={{ width: '90vw' }} className="profileCard">
                         {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
                         <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
+                            <Card.Title>Seungyoon (Jack) Lee</Card.Title>
+                            {/* <Card.Img src='' width={'10vh'}></Card.Img> */}
                             <Card.Text>
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
