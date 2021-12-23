@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import Collapsible from 'react-collapsible';
 import { useSpring, animated } from 'react-spring';
 import { css } from "@emotion/react";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../components/css/Main.css';
 import '../components/css/About.css';
+import Avatar from '../images/Icon/Avatar.png';
 
 const About = () => {
     const [loading, setLoading] = useState(false);
@@ -31,24 +31,38 @@ const About = () => {
             <Navbar />
             <animated.div className='mainAbout' style={props}>
                 <div className='aboutDiv'>
-                    <h2 className='aboutTitle'>About</h2>
+                    {/* <div class="backgroundImg"></div>  */}
+                    <div className="profileCard">
+                            <div className='profileLeft'>
+                                <img src={Avatar} className="avatar" />
+                            </div>
+                            <div className='profileRight'>
+                                <h2 className="profileName">Seungyoon (Jack) Lee</h2>
+                                <h3>I'm a full-stack / software developer from Vancouver, BC.</h3>
+                                <h3>As a recent graduate of BCIT CST, </h3>
+                            </div>
+                            
+                    </div>
 
-                    <Card style={{ width: '90vw' }} className="profileCard">
-                        {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-                        <Card.Body>
-                            <Card.Title>Seungyoon (Jack) Lee</Card.Title>
-                            {/* <Card.Img src='' width={'10vh'}></Card.Img> */}
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
+                    <div className='Education'>
+                        <Collapsible classParentString='collapseEduc' trigger="Education">
+                            <h3>Bachelor of Technology - Network Security Development, BCIT (January 2021 - December 2022)</h3>
+                            <h3>Diploma - Computer Systems Technology, BCIT (January 2020 - December 2021)</h3>
+                        </Collapsible>
+                        
+                    </div>
 
-                    <h2>Education</h2>
-                    <h2>Skills</h2>
-                    <h2>Resume</h2>
+                    <div className='Skills'>
+                        <Collapsible classParentString='collapseSkills' trigger="Skills">
+                            <h3>Java</h3>
+                        </Collapsible>
+                    </div>
+
+                    <div className='Resume'>
+                        <Collapsible classParentString='collapseResume' trigger="Resume">
+                            <h3>Download here</h3>
+                        </Collapsible>
+                    </div>
                 </div>
                 <Footer />
             </animated.div>

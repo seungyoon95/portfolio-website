@@ -8,16 +8,94 @@
 }
 
 .aboutDiv {
+    /* background-image: linear-gradient(lightgrey, white, lightgrey); */
     animation: 1s ease-out 0s 1 slideInFromLeft;
     background-color: white;
-    height: 84vh;
-}
-
-.aboutTitle {
-    margin-top: 3vh;
+    height: 87vh;
 }
 
 .profileCard {
+    padding-top: 3vh;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.Education {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Skills {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Resume {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profileLeft {
+    width: 30%;
+}
+
+.avatar {
+    width: 300px;
+    height: 150px;
+}
+
+.profileRight {
+    width: 70%;
+}
+
+.profileName {
+    margin-bottom: 3vh;
+    font-weight: bold;
+}
+
+h2, h3 {
+    text-align: left;
+}
+h3 {
+    font-weight: normal;
+}
+
+.collapseEduc h3 {
+    margin-top: 3vh;
+    margin-left: 3vw;
+}
+
+.collapseSkills h3 {
+    margin-top: 3vh;
+    margin-left: 3vw;
+}
+
+.collapseResume h3 {
+    margin-top: 3vh;
+    margin-left: 3vw;
+}
+
+.collapseEduc, .collapseSkills, .collapseResume {
+    background-color: lightgrey;
+    font-size: 28px;
+    margin-top: 3vh;
+}
+
+@media screen and (max-width: 900px) {
+    .profileLeft {
+        width: 100%;
+        border-right: none;
+        z-index: 1;
+    }
+
+    .profileRight {
+        width: 100%;
+        text-align: center;
+    }
 }
