@@ -76,14 +76,8 @@
     cursor: pointer;
 }
 
-.link-projects {
-    color: black;
-}
-
-.link-about {
-    color: black;
-}
-
 .showcase_btn-projects:hover, .showcase_btn-about:hover {
     font-weight: bold;
+    background-color: black;
+    color: white;
 }

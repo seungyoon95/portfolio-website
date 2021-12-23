@@ -12,8 +12,8 @@ const Showcase = () => {
                 nostrum esse quidem magnam eveniet animi consectetur!</p> */}
         
             <div className="showcase_buttons">
-                <button className="showcase_btn-projects"><NavLink to="/projects" className='link-projects'>Projects</NavLink></button>
-                <button className="showcase_btn-about"><NavLink to="/about" className='link-about'>About</NavLink></button>
+                <NavLink to="/projects" className='link-projects'><button className="showcase_btn-projects">Projects</button></NavLink>
+                <NavLink to="/about" className='link-about'><button className="showcase_btn-about">About</button></NavLink>
             </div>
         </div>
     )
