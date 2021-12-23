@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Particle from '../components/Particles';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import { useSpring, animated } from 'react-spring';
 import { css } from "@emotion/react";
 import Navbar from '../components/Navbar';
@@ -31,7 +31,7 @@ import image_Quiz_Random from '../images/projects/API Quiz Creator/Quiz_Random.p
 // Electric Advantage images
 
 // Budgeting App images
-import image_budgeting_main from '../images/projects/Budgeting App/budgeting_main.PNG';
+// import image_budgeting_main from '../images/projects/Budgeting App/budgeting_main.PNG';
 import image_budgeting_home from '../images/projects/Budgeting App/budgeting_home.PNG';
 import image_budgeting_edit from '../images/projects/Budgeting App/budgeting_edit.PNG';
 import image_budgeting_daily from '../images/projects/Budgeting App/budgeting_daily.PNG';
@@ -70,9 +70,17 @@ import image_ZombieGame_Main from '../images/projects/ZombieGame/ZombieGame_Main
 import image_ZombieGame_Explode from '../images/projects/ZombieGame/ZombieGame_Explode.png';
 
 const Projects = () => {
-
     const [loading, setLoading] = useState(false);
     const props = useSpring({ config: {duration:200}, from: { opacity: 0 }, opacity: 1, delay: 100 });
+    const [showEvanescent, setShowEvanescent] = useState(false);
+    const [showQuiz, setShowQuiz] = useState(false);
+    const [showElectric, setShowElectric] = useState(false);
+    const [showBudgeting, setShowBudgeting] = useState(false);
+    const [showGame, setShowGame] = useState(false);
+    const [showMarked, setShowMarked] = useState(false);
+    const [showHangman, setShowHangman] = useState(false);
+    const [showZombie, setShowZombie] = useState(false);
+
 
     const override = css`
     display: block;
@@ -96,7 +104,6 @@ const Projects = () => {
             <h2 className='projectTitle'>Projects</h2>
                 <div className='projectsDiv'>
                     <div className='projectsLeft'>
-
                         <div className="div_project">
                             <div className="project_description">
                                 <h2 className="project_title">Evanescent</h2>
@@ -106,74 +113,91 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            <Carousel variant="dark" className="carousel_project">
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_evanescent_Home}
-                                    alt="First slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_evanescent_Landing1}
-                                    alt="Second slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_evanescent_Landing2}
-                                    alt="Third slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_evanescent_SignUp}
-                                    alt="Fourth slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_evanescent_SignIn}
-                                    alt="Fifth slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_evanescent_Profile}
-                                    alt="Sixth slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_evanescent_Search}
-                                    alt="Seventh slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_evanescent_ItemDetails}
-                                    alt="Eighth slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_evanescent_Portfolio}
-                                    alt="Ninth slide"
-                                    />
-                                </Carousel.Item>
-                            </Carousel>
-
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark" onClick={() => setShowEvanescent(true)}>More Info</Button>{' '}
+                            
+                                <Modal
+                                    size="lg"
+                                    show={showEvanescent}
+                                    onHide={() => setShowEvanescent(false)}
+                                    dialogClassName="modal-90w"
+                                    aria-labelledby="example-custom-modal-styling-title"
+                                >
+                                    <Modal.Header closeButton>
+                                    <Modal.Title id="example-custom-modal-styling-title">
+                                        Evanescent
+                                    </Modal.Title>
+                                    </Modal.Header>
+                                    <Modal.Body>
+                                    <p>Pop-Up Store!</p>
+                                    <Carousel variant="light" className="carousel_project">
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_evanescent_Home}
+                                            alt="First slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_evanescent_Landing1}
+                                            alt="Second slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_evanescent_Landing2}
+                                            alt="Third slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_evanescent_SignUp}
+                                            alt="Fourth slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_evanescent_SignIn}
+                                            alt="Fifth slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_evanescent_Profile}
+                                            alt="Sixth slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_evanescent_Search}
+                                            alt="Seventh slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_evanescent_ItemDetails}
+                                            alt="Eighth slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_evanescent_Portfolio}
+                                            alt="Ninth slide"
+                                            />
+                                        </Carousel.Item>
+                                    </Carousel>
+                                    </Modal.Body>
+                                </Modal>
+                            
                             </div>
 
                         </div>
@@ -189,56 +213,72 @@ const Projects = () => {
                                 </div>
                             </div>
 
-
-                            <Carousel variant="dark" className="carousel_project">
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_Quiz_Home}
-                                    alt="First slide"
-                                    />
-
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_Quiz_Create}
-                                    alt="Second slide"
-                                    />
-
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_Quiz_Update}
-                                    alt="Third slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_Quiz_Delete}
-                                    alt="Fourth slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_Quiz_Category}
-                                    alt="Fifth slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_Quiz_Random}
-                                    alt="Sixth slide"
-                                    />
-                                </Carousel.Item>
-                            </Carousel>
-
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark" onClick={() => setShowQuiz(true)}>More Info</Button>{' '}
+                            
+                                <Modal
+                                    size="lg"
+                                    show={showQuiz}
+                                    onHide={() => setShowQuiz(false)}
+                                    dialogClassName="modal-90w"
+                                    aria-labelledby="example-custom-modal-styling-title"
+                                >
+                                    <Modal.Header closeButton>
+                                    <Modal.Title id="example-custom-modal-styling-title">
+                                        API Quiz Creator
+                                    </Modal.Title>
+                                    </Modal.Header>
+                                    <Modal.Body>
+                                    <p>Quiz App!</p>
+
+                                    <Carousel variant="dark" className="carousel_project">
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_Quiz_Home}
+                                            alt="First slide"
+                                            />
+
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_Quiz_Create}
+                                            alt="Second slide"
+                                            />
+
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_Quiz_Update}
+                                            alt="Third slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_Quiz_Delete}
+                                            alt="Fourth slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_Quiz_Category}
+                                            alt="Fifth slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_Quiz_Random}
+                                            alt="Sixth slide"
+                                            />
+                                        </Carousel.Item>
+                                    </Carousel>
+                                    </Modal.Body>
+                                </Modal>
                             </div>
 
                         </div>
@@ -254,35 +294,50 @@ const Projects = () => {
                                 </div>
                             </div>
 
-
-                            <Carousel className="carousel_project">
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src="holder.js/800x400?text=First slide&bg=373940"
-                                    alt="First slide"
-                                    />
-
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src="holder.js/800x400?text=Second slide&bg=282c34"
-                                    alt="Second slide"
-                                    />
-
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src="holder.js/800x400?text=Third slide&bg=20232a"
-                                    alt="Third slide"
-                                    />
-                                </Carousel.Item>
-                            </Carousel>
-
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark" onClick={() => setShowElectric(true)}>More Info</Button>{' '}
+                            
+                                <Modal
+                                    size="lg"
+                                    show={showElectric}
+                                    onHide={() => setShowElectric(false)}
+                                    dialogClassName="modal-90w"
+                                    aria-labelledby="example-custom-modal-styling-title"
+                                >
+                                    <Modal.Header closeButton>
+                                    <Modal.Title id="example-custom-modal-styling-title">
+                                        Electric Advantage
+                                    </Modal.Title>
+                                    </Modal.Header>
+                                    <Modal.Body>
+                                    <p>Electric Advantage!</p>
+                                    <Carousel className="carousel_project">
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src="holder.js/800x400?text=First slide&bg=373940"
+                                            alt="First slide"
+                                            />
+
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src="holder.js/800x400?text=Second slide&bg=282c34"
+                                            alt="Second slide"
+                                            />
+
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src="holder.js/800x400?text=Third slide&bg=20232a"
+                                            alt="Third slide"
+                                            />
+                                        </Carousel.Item>
+                                    </Carousel>
+                                    </Modal.Body>
+                                </Modal>
                             </div>
 
                         </div>
@@ -297,41 +352,61 @@ const Projects = () => {
                                     <h3>~ Apr 2021</h3>
                                 </div>
                             </div>
-                            <Carousel className="carousel_project">
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_budgeting_home}
-                                    alt="First slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_budgeting_edit}
-                                    alt="Second slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_budgeting_daily}
-                                    alt="Third slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_budgeting_monthly}
-                                    alt="Fourth slide"
-                                    />
-                                </Carousel.Item>
-                            </Carousel>
                             
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark" onClick={() => setShowBudgeting(true)}>More Info</Button>{' '}
+                            
+                                <Modal
+                                    size="lg"
+                                    show={showBudgeting}
+                                    onHide={() => setShowBudgeting(false)}
+                                    dialogClassName="modal-90w"
+                                    aria-labelledby="example-custom-modal-styling-title"
+                                >
+                                    <Modal.Header closeButton>
+                                    <Modal.Title id="example-custom-modal-styling-title">
+                                        Budgeting
+                                    </Modal.Title>
+                                    </Modal.Header>
+                                    <Modal.Body>
+                                    <p>Budgeting App!</p>
+
+                                    <Carousel className="carousel_project">
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_budgeting_home}
+                                            alt="First slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_budgeting_edit}
+                                            alt="Second slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_budgeting_daily}
+                                            alt="Third slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_budgeting_monthly}
+                                            alt="Fourth slide"
+                                            />
+                                        </Carousel.Item>
+                                    </Carousel>
+                                    </Modal.Body>
+                                </Modal>
                             </div>
                         </div>
+
+                        <hr />
 
                     </div>
 
@@ -345,98 +420,115 @@ const Projects = () => {
                                     <h3>~ June 2020</h3>    
                                 </div>
                             </div>
-                            
-                            <Carousel variant="dark" className="carousel_project">
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_A_Game_SignIn}
-                                    alt="First slide"
-                                    />
-
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_A_Game_SignUp}
-                                    alt="Second slide"
-                                    />
-
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_A_Game_Landing}
-                                    alt="Third slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_A_Game_About}
-                                    alt="Fourth slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_A_Game_EasterEgg}
-                                    alt="Fifth slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_A_Game_Leaderboard}
-                                    alt="Sixth slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_A_Game_Profile}
-                                    alt="Seventh slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_A_Game_Loading}
-                                    alt="Eighth slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_A_Game_InGame1}
-                                    alt="Ninth slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_A_Game_InGame2}
-                                    alt="Tenth slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_A_Game_InGame3}
-                                    alt="Eleventh slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_A_Game_GameOver}
-                                    alt="Twelveth slide"
-                                    />
-                                </Carousel.Item>
-                            </Carousel>
 
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark" onClick={() => setShowGame(true)}>More Info</Button>{' '}
+                            
+                                <Modal
+                                    size="lg"
+                                    show={showGame}
+                                    onHide={() => setShowGame(false)}
+                                    dialogClassName="modal-90w"
+                                    aria-labelledby="example-custom-modal-styling-title"
+                                >
+                                    <Modal.Header closeButton>
+                                    <Modal.Title id="example-custom-modal-styling-title">
+                                        A_Game
+                                    </Modal.Title>
+                                    </Modal.Header>
+                                    <Modal.Body>
+                                    <p>Game!</p>
+
+                                    <Carousel variant="dark" className="carousel_project">
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_A_Game_SignIn}
+                                            alt="First slide"
+                                            />
+
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_A_Game_SignUp}
+                                            alt="Second slide"
+                                            />
+
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_A_Game_Landing}
+                                            alt="Third slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_A_Game_About}
+                                            alt="Fourth slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_A_Game_EasterEgg}
+                                            alt="Fifth slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_A_Game_Leaderboard}
+                                            alt="Sixth slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_A_Game_Profile}
+                                            alt="Seventh slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_A_Game_Loading}
+                                            alt="Eighth slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_A_Game_InGame1}
+                                            alt="Ninth slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_A_Game_InGame2}
+                                            alt="Tenth slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_A_Game_InGame3}
+                                            alt="Eleventh slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_A_Game_GameOver}
+                                            alt="Twelveth slide"
+                                            />
+                                        </Carousel.Item>
+                                    </Carousel>
+                                    </Modal.Body>
+                                </Modal>
                             </div>
 
                         </div>
@@ -452,62 +544,79 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            <Carousel className="carousel_project">
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_Marked_Landing}
-                                    alt="First slide"
-                                    />
-
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_Marked_Home}
-                                    alt="Second slide"
-                                    />
-
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_Marked_Nav}
-                                    alt="Third slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_Marked_Semester}
-                                    alt="Fourth slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_Marked_Grade}
-                                    alt="Fifth slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_Marked_Insight}
-                                    alt="Sixth slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_Marked_Settings}
-                                    alt="Seventh slide"
-                                    />
-                                </Carousel.Item>
-                            </Carousel>
-
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark" onClick={() => setShowMarked(true)}>More Info</Button>{' '}
+                            
+                                <Modal
+                                    size="lg"
+                                    show={showMarked}
+                                    onHide={() => setShowMarked(false)}
+                                    dialogClassName="modal-90w"
+                                    aria-labelledby="example-custom-modal-styling-title"
+                                >
+                                    <Modal.Header closeButton>
+                                    <Modal.Title id="example-custom-modal-styling-title">
+                                        Marked
+                                    </Modal.Title>
+                                    </Modal.Header>
+                                    <Modal.Body>
+                                    <p>Marked!</p>
+
+                                    <Carousel className="carousel_project">
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_Marked_Landing}
+                                            alt="First slide"
+                                            />
+
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_Marked_Home}
+                                            alt="Second slide"
+                                            />
+
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_Marked_Nav}
+                                            alt="Third slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_Marked_Semester}
+                                            alt="Fourth slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_Marked_Grade}
+                                            alt="Fifth slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_Marked_Insight}
+                                            alt="Sixth slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_Marked_Settings}
+                                            alt="Seventh slide"
+                                            />
+                                        </Carousel.Item>
+                                    </Carousel>
+                                    </Modal.Body>
+                                </Modal>
                             </div>
 
                         </div>
@@ -523,34 +632,50 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            <Carousel variant="dark" className="carousel_project">
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_hangman_Begin}
-                                    alt="First slide"
-                                    />
-
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_hangman_InProgress}
-                                    alt="Second slide"
-                                    />
-
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_hangman_GameOver}
-                                    alt="Third slide"
-                                    />
-                                </Carousel.Item>
-                            </Carousel>
-
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark" onClick={() => setShowHangman(true)}>More Info</Button>{' '}
+
+                                <Modal
+                                    size="lg"
+                                    show={showHangman}
+                                    onHide={() => setShowHangman(false)}
+                                    dialogClassName="modal-90w"
+                                    aria-labelledby="example-custom-modal-styling-title"
+                                >
+                                    <Modal.Header closeButton>
+                                    <Modal.Title id="example-custom-modal-styling-title">
+                                        Hangman
+                                    </Modal.Title>
+                                    </Modal.Header>
+                                    <Modal.Body>
+                                    <p>Hangman!</p>
+                                    <Carousel variant="dark" className="carousel_project">
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_hangman_Begin}
+                                            alt="First slide"
+                                            />
+
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_hangman_InProgress}
+                                            alt="Second slide"
+                                            />
+
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src={image_hangman_GameOver}
+                                            alt="Third slide"
+                                            />
+                                        </Carousel.Item>
+                                    </Carousel>
+                                    </Modal.Body>
+                                </Modal>
                             </div>
 
                         </div>
@@ -566,30 +691,48 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            <Carousel variant="dark" className="carousel_project">
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_ZombieGame_Main}
-                                    alt="First slide"
-                                    />
-
-                                </Carousel.Item>
-                                <Carousel.Item interval={1500}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={image_ZombieGame_Explode}
-                                    alt="Second slide"
-                                    />
-
-                                </Carousel.Item>
-                            </Carousel>
-
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark" onClick={() => setShowZombie(true)}>More Info</Button>{' '}
+                            
+                                <Modal
+                                    size="lg"
+                                    show={showZombie}
+                                    onHide={() => setShowZombie(false)}
+                                    dialogClassName="modal-90w"
+                                    aria-labelledby="example-custom-modal-styling-title"
+                                >
+                                    <Modal.Header closeButton>
+                                    <Modal.Title id="example-custom-modal-styling-title">
+                                        Zombie Game
+                                    </Modal.Title>
+                                    </Modal.Header>
+                                    <Modal.Body>
+                                        <p>Zombie Game!</p>
+
+                                        <Carousel variant="dark" className="carousel_project">
+                                            <Carousel.Item>
+                                                <img
+                                                className="d-block w-100"
+                                                src={image_ZombieGame_Main}
+                                                alt="First slide"
+                                                />
+
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <img
+                                                className="d-block w-100"
+                                                src={image_ZombieGame_Explode}
+                                                alt="Second slide"
+                                                />
+
+                                            </Carousel.Item>
+                                        </Carousel>
+                                    </Modal.Body>
+                                </Modal>
                             </div>
 
                         </div>
+                        <hr />
                     </div>
 
                 </div>

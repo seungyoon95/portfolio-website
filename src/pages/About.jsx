@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Particle from '../components/Particles';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { useSpring, animated } from 'react-spring';

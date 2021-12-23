@@ -8,7 +8,7 @@
 }
 
 .footer {
-    animation: 0.5s ease-out 0s 1 slideInFromBottom;
+    animation: 1s ease-out 0s 1 slideInFromBottom;
     background-color: #e1e1e1;
     height: 6vh;
     padding-top: 2vh;

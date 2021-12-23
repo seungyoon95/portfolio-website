@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { NavLink } from 'react-router-dom';
-import icon from '../images/Icon/Icon.png';
 
 const Navbar = () => {
     

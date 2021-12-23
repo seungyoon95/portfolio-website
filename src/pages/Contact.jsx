@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Particle from '../components/Particles';
 import { useSpring, animated } from 'react-spring';
 import { css } from "@emotion/react";
 import Navbar from '../components/Navbar';
