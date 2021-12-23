@@ -1,15 +1,23 @@
 .mainHome {
-    /* background: url("./images/background/background-code.png"); */
-    background-color: black;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(lightgray, white, lightgray);
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    background-color: white;
+    height: 87vh;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .showcase {
-    max-width: 800px;
-    height: 100vh;
+    /* max-width: 800px; */
+    width: 100%;
+    height: 87vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,9 +25,14 @@
     margin: 0 auto;
 }
 
+.navbar {
+    background-color: black;
+    color: white;
+}
+
 .showcase h1 {
     font-size: 64px;
-    color: white;
+    color: black;
     text-align: center;
     font-weight: normal;
     letter-spacing: 3px;
@@ -28,14 +41,14 @@
 
 .showcase h2 {
     font-size: 28px;
-    color: white;
+    color: black;
     text-align: center;
     font-weight: lighter;
     letter-spacing: 4px;
 }
 
 .showcase p {
-    color: white;
+    color: black;
     text-align: center;
     font-size: 16px;
     margin-top: 20px;
@@ -43,17 +56,20 @@
 }
 
 .showcase_btn-projects {
-    border: white solid 1px;
+    width: 200px;
+    height: 50px;
+    border: black solid 1px;
     background-color: transparent;
-    color: white;
-    padding: 10px 50px;
+    color: black;
     margin: 0 20px;
     cursor: pointer;
 }
 
 .showcase_btn-about {
-    border: white solid 1px;
-    background-color: rgba(255, 255, 255, 1);
+    width: 200px;
+    height: 50px;
+    border: black solid 1px;
+    background-color: transparent;
     color: black;
     padding: 10px 50px;
     margin: 0 20px;
@@ -61,7 +77,7 @@
 }
 
 .link-projects {
-    color: white;
+    color: black;
 }
 
 .link-about {
@@ -69,5 +85,5 @@
 }
 
 .showcase_btn-projects:hover, .showcase_btn-about:hover {
-    background-color: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
 }

@@ -1,19 +1,19 @@
 body {
-    background-color: black;
+    background-color: white;
 }
 
 .mainProjects {
     /* background: url("./images/background/background-code.png"); */
-    background-color: black;
+    background-color: white;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 80px;
 }
 
 .projectTitle {
-    margin-top: 5vh;
+    margin-top: 3vh;
+    margin-left: 3vw;
 }
 
 .projectsDiv {
@@ -29,7 +29,7 @@ body {
 .projectsLeft {
     display: flex;
     flex-direction: column;
-    border-right: 1px solid white;
+    border-right: 1px solid black;
     width: 50%;
     text-align: center;
 }
@@ -63,13 +63,16 @@ body {
 }
 
 img {
-    height: 400px;
+    height: 60vh;
+    min-height: 375px;
+    max-height: 600px;
 }
 
 .carousel_project {
     margin-top: 3vh;
-    width: 45vw;
-    max-width: 500px;
+    width: 40vw;
+    min-width: 250px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     z-index: 1;

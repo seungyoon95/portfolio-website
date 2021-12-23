@@ -1,0 +1,61 @@
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.footer {
+    animation: 0.5s ease-out 0s 1 slideInFromBottom;
+    background-color: #e1e1e1;
+    height: 6vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-top: 1px #f3f3f3 solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footerLeft {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.footerRight {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footerLink {
+    color: black;
+    font-size: large;
+    font-weight: normal;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.footerLink:hover {
+    color: black;
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 900px) {
+    
+    .footerLeft {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footerRight {
+        display: none;
+    }
+}

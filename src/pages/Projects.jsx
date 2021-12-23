@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import { useSpring, animated } from 'react-spring';
 import { css } from "@emotion/react";
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import '../components/css/Main.css';
 import '../components/css/Projects.css';
 
@@ -92,7 +93,7 @@ const Projects = () => {
             {/* <Particle /> */}
             <Navbar />
             <animated.div className='mainProjects' style={props}>
-            <h2 className='projectTitle'>Projects Page</h2>
+            <h2 className='projectTitle'>Projects</h2>
                 <div className='projectsDiv'>
                     <div className='projectsLeft'>
 
@@ -172,7 +173,7 @@ const Projects = () => {
                             </Carousel>
 
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
                             </div>
 
                         </div>
@@ -237,7 +238,7 @@ const Projects = () => {
                             </Carousel>
 
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
                             </div>
 
                         </div>
@@ -281,7 +282,7 @@ const Projects = () => {
                             </Carousel>
 
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
                             </div>
 
                         </div>
@@ -328,7 +329,7 @@ const Projects = () => {
                             </Carousel>
                             
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
                             </div>
                         </div>
 
@@ -435,7 +436,7 @@ const Projects = () => {
                             </Carousel>
 
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
                             </div>
 
                         </div>
@@ -506,7 +507,7 @@ const Projects = () => {
                             </Carousel>
 
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
                             </div>
 
                         </div>
@@ -549,7 +550,7 @@ const Projects = () => {
                             </Carousel>
 
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
                             </div>
 
                         </div>
@@ -585,13 +586,14 @@ const Projects = () => {
                             </Carousel>
 
                             <div className="div_projectButton">
-                                <Button className="button_project" variant="outline-light">More Info</Button>{' '}
+                                <Button className="button_project" variant="outline-dark">More Info</Button>{' '}
                             </div>
 
                         </div>
                     </div>
 
                 </div>
+                <Footer />
             </animated.div>
 
         </>

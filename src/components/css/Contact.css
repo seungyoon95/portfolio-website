@@ -1,7 +1,7 @@
 .mainContact {
     /* background: url("./images/background/background-code.png"); */
-    background-color: black;
-    height: 100vh;
+    background-color: white;
+    height: 87vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -14,16 +14,19 @@
     margin-left: 5vw;
 }
 
+.contactLeftTitle {
+    margin-bottom: 3vh;
+}
+
 .contactDiv {
     display: flex;
     flex-direction: row;
-    height: 80%;
 }
 
 .contactLeft {
     display: flex;
     flex-direction: column;
-    border-right: 1px solid white;
+    border-right: 1px solid grey;
     width: 20%;
     text-align: center;
 }
@@ -55,12 +58,12 @@ label {
     height: 200px;
 }
 
-.button_update {
-    background: gray;
+.button_submit {
+    background: darkgrey;
     color: white;
     border: 3px;
     border-color: gray;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 15px;
     display: block;
     width: 200px;
@@ -70,9 +73,18 @@ label {
     cursor: pointer;
 }
 
+.button_submit:hover {
+    background-color: black;
+}
+
 .contactLeft i {
     cursor: pointer;
+    color:darkgrey;
     margin-bottom: 5vh;
+}
+
+.contactLeft i:hover {
+    color: black;
 }
 
 .form-floating {

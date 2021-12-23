@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from 'react-router-dom';
+import icon from '../images/Icon/Icon.png';
 
 const Navbar = () => {
     
@@ -34,13 +35,14 @@ const Navbar = () => {
     }
 
     return (
-    <nav>
+    <nav className='navbar'>
         <div className="logo">
-            <i className="fas fa-laptop-code"><NavLink to="/"></NavLink></i>
+        {/* <NavLink to="/"><img className="image_logo" src={icon} alt="logo"/></NavLink> */}
+            <NavLink to="/"><i class="fas fa-code-branch"></i></NavLink>
             {/* <h4>Seungyoon Lee</h4> */}
         </div>
         <ul className={renderNavbar()}>
-                <li className="link"><NavLink to="/">Home</NavLink></li>
+                {/* <li className="link"><NavLink to="/">Home</NavLink></li> */}
                 <li className="link"><NavLink to="/about">About</NavLink></li>
                 <li className="link"><NavLink to="/projects">Projects</NavLink></li>
                 <li className="link"><NavLink to="/contact">Contact</NavLink></li>

@@ -1,7 +1,7 @@
-.mainAbout {
+.aboutDiv {
     /* background: url("../../images/background/background-code.png"); */
-    background-color: black;
-    height: 100vh;
+    background-color: white;
+    height: 87vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

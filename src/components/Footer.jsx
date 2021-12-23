@@ -1,66 +1,23 @@
+import '../components/css/Footer.css';
+import { NavLink } from 'react-router-dom';
 
-import React from "react";
-import {
-  Box,
-  Container,
-  Row,
-  Column,
-  FooterLink,
-  Heading,
-} from "./FooterStyles";
-  
 const Footer = () => {
   return (
-    <Box>
-      <Container>
-        <Row>
-          <Column>
-            <Heading>About</Heading>
-            <FooterLink href="#">Aim</FooterLink>
-            <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Testimonials</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Services</Heading>
-            <FooterLink href="#">Writing</FooterLink>
-            <FooterLink href="#">Internships</FooterLink>
-            <FooterLink href="#">Coding</FooterLink>
-            <FooterLink href="#">Teaching</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Social Media</Heading>
-            <FooterLink href="#">
-              <i className="fab fa-facebook-f">
-                <span style={{ marginLeft: "10px" }}>
-                  Facebook
-                </span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>
-                  Instagram
-                </span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-linkedin">
-                <span style={{ marginLeft: "10px" }}>
-                  LinkedIn
-                </span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-youtube">
-                <span style={{ marginLeft: "10px" }}>
-                  Youtube
-                </span>
-              </i>
-            </FooterLink>
-          </Column>
-        </Row>
-      </Container>
-    </Box>
+    <footer className="footer">
+      <div className='footerLeft'>
+        <h3>© 2021 Seungyoon Lee</h3>
+      </div>
+      <div className='footerRight'>
+        <h2><NavLink className='footerLink' to="/about">About</NavLink></h2>
+        <h2><NavLink className='footerLink' to="/projects">Projects</NavLink></h2>
+        <h2><NavLink className='footerLink' to="/contact">Contact</NavLink></h2>
+        {/* <a href='https://www.facebook.com/dhy02041/'><i class="fab fa-facebook-square fa-3x"></i></a>
+        <a href='https://www.instagram.com/seungyoon1/'><i class="fab fa-instagram-square fa-3x"></i></a>
+        <a href='https://www.youtube.com/channel/UC-BbVGi8JWK6Kb7xthRyPig'><i class="fab fa-youtube-square fa-3x"></i></a>
+        <a href='https://www.linkedin.com/in/seungyoon95/'><i class="fab fa-linkedin fa-3x"></i></a>
+        <a href='https://github.com/seungyoon95'><i class="fab fa-github-square fa-3x"></i></a> */}
+      </div>
+    </footer>
   );
 };
 export default Footer;
