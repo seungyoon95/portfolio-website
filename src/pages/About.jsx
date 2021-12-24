@@ -126,7 +126,7 @@ const About = () => {
                                     <ul>
                                         <li>Windows / Mac / Linux</li>
                                         <li>Git / GitHub</li>
-                                        <li>Agile Methodologies</li>
+                                        <li>Agile Methodology</li>
                                     </ul>
                                 </div>
                                 </div>
