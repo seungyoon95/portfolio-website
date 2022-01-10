@@ -28,7 +28,7 @@ const Contact = () => {
             {/* <Particle /> */}
             <Navbar />
             <animated.div className='mainContact' style={props}>
-            <h2 className='contactTitle'>Contact</h2>
+            <h2 className='contactTitle'>Contact (Work In Progress!)</h2>
                 <div className='contactDiv'>
                     <div className='contactLeft'>
                         <div className='contactLeftTitle'><h3>Social Media</h3></div>

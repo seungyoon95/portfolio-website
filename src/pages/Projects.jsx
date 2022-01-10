@@ -101,7 +101,7 @@ const Projects = () => {
             {/* <Particle /> */}
             <Navbar />
             <animated.div className='mainProjects' style={props}>
-            <h2 className='projectTitle'>Projects</h2>
+            <h2 className='projectTitle'>Projects (Work In Progress!)</h2>
                 <div className='projectsDiv'>
                     <div className='projectsLeft'>
                         <div className="div_project">
