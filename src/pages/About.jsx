@@ -76,7 +76,7 @@ const About = () => {
                             <Accordion.Header className="collapseHeader">Education</Accordion.Header>
                             <Accordion.Body>
                                 <p>January 2021 - December 2022 (Expected)</p>
-                                <h3>Bachelor of Technology - Network Security Applications Development, BCIT</h3>
+                                <h3>Bachelor of Technology - Network Security Applications Development (Part-Time), BCIT</h3>
                                 <p>January 2020 - December 2021</p>
                                 <h3>Diploma - Computer Systems Technology (Predictive Anayltics Option), BCIT</h3>
                                 <p>April 2016 - April 2017</p>
