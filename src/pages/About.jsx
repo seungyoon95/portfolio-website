@@ -99,26 +99,15 @@ const About = () => {
                                     <ul>
                                         <li>Java</li>
                                         <li>Python</li>
-                                        <li>C</li>
-                                        <li>SQL</li>
-                                        <li>Flutter</li>
-                                        <li>HTML / CSS / JavaScript</li>
+                                        <li>JavaScript</li>
                                         <li>NodeJS / ExpressJS</li>
                                         <li>ReactJS</li>
-                                        <li>R</li>
+                                        <li>SQL</li>
+                                        {/* <li>C</li> */}
+                                        <li>HTML / CSS</li>
+                                        <li>Flutter</li>
+                                        {/* <li>R</li> */}
                                         <li>Firebase</li>
-                                    </ul>
-                                </div>
-                                <div className="Tools">
-                                    <h3 className="skillTitle">IDE</h3>
-                                    <ul>
-                                        <li>Visual Studio Code</li>
-                                        <li>PyCharm</li>
-                                        <li>Jupyter Notebooks</li>
-                                        <li>IntelliJ IDEA</li>
-                                        <li>Eclipse</li>
-                                        <li>Vim</li>
-                                        <li>Android Studio</li>
                                     </ul>
                                 </div>
                                 <div className="Misc">
