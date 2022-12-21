@@ -60,7 +60,9 @@ const Contact = () => {
                                 <textarea class="form-control" id="message" name="message"></textarea>
                             </div>
 
-                            <input className="button_submit" type="submit" value="Send" />
+                            <input className="button_submit" type="submit" value="Send" disabled />
+                                
+                            <p>Button is currently closed due to spams, please try again later.</p>
 
                             <p class="card-text" id="updateText"><small class="text-muted"></small></p>
                         </form>
