@@ -6,6 +6,4 @@ Live link: https://seungyoon-lee.com
 
 ## Tech stacks
 
-Frontend: React, MateriaUI
-
-<i>Contact form using FormSubmit</i>
+Frontend built with React, contact form using FormSubmit
