@@ -1,0 +1,109 @@
+.bar-container {
+    max-width: 768px;
+  }
+  
+  .bar-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .bar-button {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #cdcdcd;
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+  
+  .bar-active, .bar-button:hover {
+    color: #393433;
+  }
+  
+  .bar-icon {
+    font-size: 1.8rem;
+    margin-right: 0.25rem;
+  }
+
+  .bar-sections {
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+  }
+  
+  .bar-content {
+    display: none;
+  }
+  
+  .bar-content-active {
+    display: block;
+  }
+  
+  .bar-data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+  }
+  
+  .bar-title {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .bar-subtitle {
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .bar-calendar {
+    font-size: 0.9rem;
+  }
+  
+  .bar-rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #393433;
+    border-radius: 50%;
+  }
+  
+  .bar-line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #393433;
+    transform: translate(6px, -7px);
+  }
+  
+  @media screen and (max-width: 992px) {
+      .bar-container {
+          margin-left: auto;
+          margin-right: auto;
+      }
+  }
+  
+  @media screen and (max-width: 768px) {
+      .bar-container {
+          margin-left: 1.5rem;
+          margin-right: 1.5rem;
+      }
+  }
+  
+  @media screen and (max-width: 576px) {
+      .bar-sections {
+          grid-template-columns: initial;
+      }
+  
+      .bar-button {
+          margin: 0 0.75rem;
+      }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+      .bar-data {
+          gap: 0.5rem;
+      }
+  }
+  

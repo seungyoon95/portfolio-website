@@ -1,0 +1,57 @@
+.scrollup {
+    position: fixed;
+    right: 2.5rem;
+    bottom: -20%;
+    background-color: #444444;
+    opacity: 0.8;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+    transition: 0.4s;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .scrollup-icon {
+    color: white;
+    border-radius: 30%;
+  }
+  
+  .scrollup:hover {
+    background-color: black;
+    animation: moveup 1.5s ease infinite;
+  }
+
+  @keyframes moveup {
+    0% {
+      transform: translateY(0);
+    }
+
+    30% {
+      transform: translateY(-1.2rem);
+    }
+  }
+
+  
+  .show-scroll {
+    bottom: 3rem;
+  }
+  
+  /* For large devices */
+  @media screen and (max-width: 992px) {
+    .scrollup {
+      right: 1.5rem;
+      padding: 0.25rem 0.4rem;
+    }
+  
+    .scrollup-icon {
+      font-size: 1.25rem;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+      .show-scroll {
+          bottom: 4rem;
+      }
+  }

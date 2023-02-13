@@ -1,0 +1,158 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* 
+  gradient white color scheme, getting darker (starting from white)
+  #FFFFFF
+  #F9F9F8
+  #F2F3F2
+  #ECECEB
+  #E5E6E4
+
+  gradient black color scheme, getting lighter (starting from black)
+  #181716
+  #2a2727
+  #393433
+  #453f3d
+  #57504d
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+}
+
+body {
+  background-color: #F9F9F8;
+  color: #000000;
+}
+
+h1,
+h2,
+h3 {
+  color: #2a2727;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 6rem 0 2rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4rem;
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+
+.container {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: #444444;
+  color: white;
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: #000000;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 3rem 0;
+  }
+
+  .section {
+    padding: 2rem 0 4rem;
+  }
+
+  .section-subtitle {
+    margin-bottom: 3rem;
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+  
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
