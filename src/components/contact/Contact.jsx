@@ -20,6 +20,7 @@ const Contact = () => {
             <a
               href="https://www.linkedin.com/in/seungyoon95/"
               className="contact-button"
+              target="_blank"
             >
               Connect
               <div className="contact-button-icon">
