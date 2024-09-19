@@ -59,7 +59,7 @@ const Bar = () => {
                   Network Security Applications Development
                 </h3>
                 <span className="bar-subtitle">
-                  BCIT, Bachelor of Technology
+                  BCIT, Bachelor of Science in Applied Computer Science
                 </span>
               </div>
 
