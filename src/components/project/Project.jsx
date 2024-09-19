@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Project.css";
+import pennypilot from "../../assets/pennypilot.png";
 import dailypost from "../../assets/dailypost.png";
 import portfolio from "../../assets/seungyoon-lee.png";
 import quickchat from "../../assets/quickchat.png";
@@ -15,6 +16,7 @@ import StorageIcon from "@mui/icons-material/Storage";
 import CloseIcon from "@mui/icons-material/Close";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import GroupsOutlinedIcon from "@mui/icons-material/GroupsOutlined";
+import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
 
 const Project = () => {
   const [toggleType, setToggleType] = useState(1);
@@ -68,13 +70,11 @@ const Project = () => {
             }
           >
             <div>
-              <FilterIcon className="project-icon" />
-              <h3 className="project-title">DailyPost</h3>
+              <RequestQuoteIcon className="project-icon" />
+              <h3 className="project-title">PennyPilot</h3>
             </div>
 
-            <a href="https://daily-post.seungyoon-lee.com" target="_blank">
-              <img src={dailypost} className="project-image" />
-            </a>
+            <img src={pennypilot} className="project-image" />
 
             <span className="project-button" onClick={() => toggleTab(1)}>
               More Info
@@ -84,6 +84,83 @@ const Project = () => {
             <div
               className={
                 toggleState === 1
+                  ? "project-modal active-modal"
+                  : "project-modal"
+              }
+            >
+              <div className="project-modal-content">
+                <CloseIcon
+                  onClick={() => toggleTab(0)}
+                  className="project-modal-close"
+                />
+
+                <h3 className="project-modal-title">PennyPilot</h3>
+                <p className="project-modal-description">
+                  A budgeting web app to track income and expenses based on their corresponding categories.
+                </p>
+
+                <ul className="project-modal-projects grid">
+                  <li className="project-modal-project">
+                    <BrushIcon className="project-modal-icon" />
+                    <p className="project-modal-info">
+                      Frontend: Next.js, TypeScript, TailwindCSS, Clerk
+                    </p>
+                  </li>
+                  <li className="project-modal-project">
+                    <StorageIcon className="project-modal-icon" />
+                    <p className="project-modal-info">
+                      Backend: Next.js, TypeScript, Prisma
+                    </p>
+                  </li>
+
+                  <li className="project-modal-project-links">
+                    <a
+                      href="https://penny-pilot-pi.vercel.app"
+                      className="project-button"
+                      target="_blank"
+                    >
+                      Go Live
+                      <ArrowForwardIcon className="project-button-icon" />
+                    </a>
+                  </li>
+
+                  <li className="project-modal-project-links">
+                    <a
+                      href="https://github.com/seungyoon95/PennyPilot-public"
+                      className="project-button"
+                      target="_blank"
+                    >
+                      Source code
+                      <ArrowForwardIcon className="project-button-icon" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className={
+              toggleType === 1
+                ? "project-content project-content-active"
+                : "project-content"
+            }
+          >
+            <div>
+              <FilterIcon className="project-icon" />
+              <h3 className="project-title">DailyPost</h3>
+            </div>
+
+            <img src={dailypost} className="project-image" />
+           
+            <span className="project-button" onClick={() => toggleTab(2)}>
+              More Info
+              <ArrowForwardIcon className="project-button-icon" />
+            </span>
+
+            <div
+              className={
+                toggleState === 2
                   ? "project-modal active-modal"
                   : "project-modal"
               }
@@ -117,22 +194,11 @@ const Project = () => {
 
                   <li className="project-modal-project-links">
                     <a
-                      href="https://daily-post.seungyoon-lee.com"
-                      className="project-button"
-                      target="_blank"
-                    >
-                      Go Live
-                      <ArrowForwardIcon className="project-button-icon" />
-                    </a>
-                  </li>
-
-                  <li className="project-modal-project-links">
-                    <a
                       href="https://github.com/seungyoon95/DailyPost"
                       className="project-button"
                       target="_blank"
                     >
-                      GitHub
+                      Source code
                       <ArrowForwardIcon className="project-button-icon" />
                     </a>
                   </li>
@@ -153,18 +219,16 @@ const Project = () => {
               <h3 className="project-title">QuickChat</h3>
             </div>
 
-            <a href="https://quick-chat.seungyoon-lee.com" target="_blank">
-              <img src={quickchat} className="project-image" />
-            </a>
-
-            <span className="project-button" onClick={() => toggleTab(2)}>
+            <img src={quickchat} className="project-image" />
+          
+            <span className="project-button" onClick={() => toggleTab(3)}>
               More Info
               <ArrowForwardIcon className="project-button-icon" />
             </span>
 
             <div
               className={
-                toggleState === 2
+                toggleState === 3
                   ? "project-modal active-modal"
                   : "project-modal"
               }
@@ -197,89 +261,11 @@ const Project = () => {
 
                   <li className="project-modal-project-links">
                     <a
-                      href="https://quick-chat.seungyoon-lee.com"
-                      className="project-button"
-                      target="_blank"
-                    >
-                      Go Live
-                      <ArrowForwardIcon className="project-button-icon" />
-                    </a>
-                  </li>
-
-                  <li className="project-modal-project-links">
-                    <a
                       href="https://github.com/seungyoon95/QuickChat"
                       className="project-button"
                       target="_blank"
                     >
-                      GitHub
-                      <ArrowForwardIcon className="project-button-icon" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className={
-              toggleType === 1
-                ? "project-content project-content-active"
-                : "project-content"
-            }
-          >
-            <div>
-              <WebAssetIcon className="project-icon" />
-              <h3 className="project-title">seungyoon-lee.com</h3>
-            </div>
-
-            <a href="#">
-              <img src={portfolio} className="project-image" />
-            </a>
-
-            <span className="project-button" onClick={() => toggleTab(3)}>
-              More Info
-              <ArrowForwardIcon className="project-button-icon" />
-            </span>
-
-            <div
-              className={
-                toggleState === 3
-                  ? "project-modal active-modal"
-                  : "project-modal"
-              }
-            >
-              <div className="project-modal-content">
-                <CloseIcon
-                  onClick={() => toggleTab(0)}
-                  className="project-modal-close"
-                />
-
-                <h3 className="project-modal-title">seungyoon-lee.com</h3>
-                <p className="project-modal-description">
-                  A portfolio website created to provide more information about
-                  myself and showcase projects I have.
-                </p>
-
-                <ul className="project-modal-projects grid">
-                  <li className="project-modal-project">
-                    <BrushIcon className="project-modal-icon" />
-                    <p className="project-modal-info">
-                      Frontend: React, CSS, MaterialUI
-                    </p>
-                  </li>
-                  <li className="project-modal-project">
-                    <StorageIcon className="project-modal-icon" />
-                    <p className="project-modal-info">Backend: N/A</p>
-                  </li>
-
-                  <li className="project-modal-project-links">
-                    <a
-                      href="https://github.com/seungyoon95/portfolio-website"
-                      className="project-button"
-                      target="_blank"
-                    >
-                      GitHub
+                      Source code
                       <ArrowForwardIcon className="project-button-icon" />
                     </a>
                   </li>
