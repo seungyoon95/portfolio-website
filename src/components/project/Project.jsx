@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./Project.css";
+import vanestate from "../../assets/VanEstate.png";
 import pennypilot from "../../assets/pennypilot.png";
 import dailypost from "../../assets/dailypost.png";
 import portfolio from "../../assets/seungyoon-lee.png";
 import quickchat from "../../assets/quickchat.png";
+import HomeIcon from '@mui/icons-material/Home';
 import a_game from "../../assets/A_Game.png";
 import electric from "../../assets/electricadvantage.png";
 import evanescent from "../../assets/Evanescent.png";
@@ -16,7 +18,7 @@ import StorageIcon from "@mui/icons-material/Storage";
 import CloseIcon from "@mui/icons-material/Close";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import GroupsOutlinedIcon from "@mui/icons-material/GroupsOutlined";
-import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
+import RequestQuoteIcon from "@mui/icons-material/RequestQuote";
 
 const Project = () => {
   const [toggleType, setToggleType] = useState(1);
@@ -70,11 +72,11 @@ const Project = () => {
             }
           >
             <div>
-              <RequestQuoteIcon className="project-icon" />
-              <h3 className="project-title">PennyPilot</h3>
+              <HomeIcon className="project-icon" />
+              <h3 className="project-title">VanEstate</h3>
             </div>
 
-            <img src={pennypilot} className="project-image" />
+            <img src={vanestate} className="project-image" />
 
             <span className="project-button" onClick={() => toggleTab(1)}>
               More Info
@@ -94,9 +96,87 @@ const Project = () => {
                   className="project-modal-close"
                 />
 
+                <h3 className="project-modal-title">VanEstate</h3>
+                <p className="project-modal-description">
+                A real estate listing web app to post and view houses available for rent or sale.
+                </p>
+
+                <ul className="project-modal-projects grid">
+                  <li className="project-modal-project">
+                    <BrushIcon className="project-modal-icon" />
+                    <p className="project-modal-info">
+                      Frontend: Next.js, JavaScript, TailwindCSS, Clerk
+                    </p>
+                  </li>
+                  <li className="project-modal-project">
+                    <StorageIcon className="project-modal-icon" />
+                    <p className="project-modal-info">
+                      Backend: Next.js, MongoDB, Firebase
+                    </p>
+                  </li>
+
+                  <li className="project-modal-project-links">
+                    <a
+                      href="https://van-estate.vercel.app/"
+                      className="project-button"
+                      target="_blank"
+                    >
+                      Go Live
+                      <ArrowForwardIcon className="project-button-icon" />
+                    </a>
+                  </li>
+
+                  <li className="project-modal-project-links">
+                    <a
+                      href="https://github.com/seungyoon95/VanEstate"
+                      className="project-button"
+                      target="_blank"
+                    >
+                      Source code
+                      <ArrowForwardIcon className="project-button-icon" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className={
+              toggleType === 1
+                ? "project-content project-content-active"
+                : "project-content"
+            }
+          >
+            <div>
+              <RequestQuoteIcon className="project-icon" />
+              <h3 className="project-title">PennyPilot</h3>
+            </div>
+
+            <img src={pennypilot} className="project-image" />
+
+            <span className="project-button" onClick={() => toggleTab(2)}>
+              More Info
+              <ArrowForwardIcon className="project-button-icon" />
+            </span>
+
+            <div
+              className={
+                toggleState === 2
+                  ? "project-modal active-modal"
+                  : "project-modal"
+              }
+            >
+              <div className="project-modal-content">
+                <CloseIcon
+                  onClick={() => toggleTab(0)}
+                  className="project-modal-close"
+                />
+
                 <h3 className="project-modal-title">PennyPilot</h3>
                 <p className="project-modal-description">
-                  A budgeting web app to track income and expenses based on their corresponding categories.
+                  A budgeting web app to track income and expenses based on
+                  their corresponding categories.
                 </p>
 
                 <ul className="project-modal-projects grid">
@@ -152,15 +232,15 @@ const Project = () => {
             </div>
 
             <img src={dailypost} className="project-image" />
-           
-            <span className="project-button" onClick={() => toggleTab(2)}>
+
+            <span className="project-button" onClick={() => toggleTab(3)}>
               More Info
               <ArrowForwardIcon className="project-button-icon" />
             </span>
 
             <div
               className={
-                toggleState === 2
+                toggleState === 3
                   ? "project-modal active-modal"
                   : "project-modal"
               }
@@ -195,73 +275,6 @@ const Project = () => {
                   <li className="project-modal-project-links">
                     <a
                       href="https://github.com/seungyoon95/DailyPost"
-                      className="project-button"
-                      target="_blank"
-                    >
-                      Source code
-                      <ArrowForwardIcon className="project-button-icon" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className={
-              toggleType === 1
-                ? "project-content project-content-active"
-                : "project-content"
-            }
-          >
-            <div>
-              <ChatIcon className="project-icon" />
-              <h3 className="project-title">QuickChat</h3>
-            </div>
-
-            <img src={quickchat} className="project-image" />
-          
-            <span className="project-button" onClick={() => toggleTab(3)}>
-              More Info
-              <ArrowForwardIcon className="project-button-icon" />
-            </span>
-
-            <div
-              className={
-                toggleState === 3
-                  ? "project-modal active-modal"
-                  : "project-modal"
-              }
-            >
-              <div className="project-modal-content">
-                <CloseIcon
-                  onClick={() => toggleTab(0)}
-                  className="project-modal-close"
-                />
-
-                <h3 className="project-modal-title">QuickChat</h3>
-                <p className="project-modal-description">
-                  A web-based chat app where users can enter the name of the
-                  room to join, then chat with others who join the same room.
-                  The user must sign in first with google, as the chat menu will
-                  only appear when the user is signed in.
-                </p>
-
-                <ul className="project-modal-projects grid">
-                  <li className="project-modal-project">
-                    <BrushIcon className="project-modal-icon" />
-                    <p className="project-modal-info">Frontend: React</p>
-                  </li>
-                  <li className="project-modal-project">
-                    <StorageIcon className="project-modal-icon" />
-                    <p className="project-modal-info">
-                      Backend: NodeJS, Express, SocketIO, Firebase
-                    </p>
-                  </li>
-
-                  <li className="project-modal-project-links">
-                    <a
-                      href="https://github.com/seungyoon95/QuickChat"
                       className="project-button"
                       target="_blank"
                     >
