@@ -17,14 +17,18 @@ const About = () => {
           <Info />
 
           <p className="about-description">
-            Hello, my name is Seungyoon (or Jack), and I am a software
-            developer. Starting my programming journey in the Summer of 2019, I
-            graduated from BCIT's computer systems technology program in
-            December 2021. As of now, I am currently looking for a job
-            opportunity while taking part-time classes in the evening to
-            pursue further studies in network security applications development.
-            Feel free to send me a message on LinkedIn or email me for any
-            questions!
+            Dedicated and skilled Network Security Applications Development
+            degree student with practical experience in full-stack and frontend
+            development. Proficient in building secure, scalable web
+            applications using HTML, CSS, JavaScript, Node.js, SQL and Firebase
+            with a strong understanding of network security principles and
+            application performance optimization. Adept at collaborating on
+            software engineering projects in team environments, participating in
+            agile development processes, and conducting testing to ensure
+            high-quality software solutions. Exceptionally enthusiastic
+            professional with keen communication, interpersonal, and
+            organizational skills, as well as time management, strategic
+            planning, and troubleshooting expertise.
           </p>
 
           <a download="" href={CV} className="button button--flex">
