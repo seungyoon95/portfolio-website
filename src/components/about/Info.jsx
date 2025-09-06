@@ -15,7 +15,7 @@ const Info = () => {
       <div className="about-box">
         <SchoolOutlinedIcon className="about-icon" />
         <h3 className="about-title">Education</h3>
-        <span className="about-subtitle">Diploma</span>
+        <span className="about-subtitle">BSc in Applied Computer Science</span>
       </div>
 
       <div className="about-box">

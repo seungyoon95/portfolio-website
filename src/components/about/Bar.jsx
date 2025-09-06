@@ -53,7 +53,7 @@ const Bar = () => {
             <div className="bar-data">
               <div>
                 <div className="bar-calendar">
-                  <i className="uil uil-calendar-alt"></i> 2022 - Present
+                  <i className="uil uil-calendar-alt"></i> 2022 - 2025
                 </div>
                 <h3 className="bar-title">
                   Network Security Applications Development
